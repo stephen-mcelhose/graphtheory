@@ -8,6 +8,8 @@ Grinberg's notes are dedicated to the public domain under [CC0 1.0](https://crea
 
 ## How to use this
 
+`START_HERE.md` is the re-entry map. Current learner progress is in `learning/default_student/`, including `resume_here.md`. Laplacian drill is `docs/exercises/laplacian_practice_sheet.md`.
+
 Work through `docs/chapters/` first. Then lessons, then the matching Go packages. Keep `docs/research_to_implementation_gap.md` open. That table is the honest map of what is implemented, what is a checker only, and what is still just prose.
 
 When you find a hole, fill it. Add a test, a lesson note, or a pointer to an external source. The paper is the spine. Bondy and Murty, Diestel, and the usual algorithm references are fair game when the notes skip an implementation detail.
@@ -29,7 +31,7 @@ Point the skill at this checkout as `project_root` and pick a `student` id if yo
 - `generators`: complete/path/cycle/bipartite/hypercube/de Bruijn graph generators
 - `theory`: Eulerian, Hamiltonian, tree, bipartite, and degree-condition helpers
 - `examples`: small examples, including named graph families
-- `docs`: chapters, lessons, exercises, sources, and the implementation-gap table
+- `docs`: chapters, knowledge base, lessons, exercises, sources, and the implementation-gap table
 - `learning`: per-student notes and progress
 - `.agents/skills/graph-learning-coach`: coaching skill
 
