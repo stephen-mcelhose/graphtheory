@@ -1,17 +1,24 @@
 # graphtheory
 
-`graphtheory` is a Go library blueprint and reference implementation inspired by Darij Grinberg's *An introduction to graph theory* (arXiv:2308.04512).
+A pedagogical Go library for studying graph theory, organized around Darij Grinberg's notes *[An introduction to graph theory](https://arxiv.org/abs/2308.04512)* (arXiv:2308.04512).
 
-It is designed to cover the paper's material in a practical way, with a focus on:
+This repo is a course companion, not a finished graph SDK. The code, chapter summaries, lessons, and the graph learning coach are a **starting point**. They will be wrong, incomplete, or one-sided in places. Do not trust them as authority. When something looks thin, missing, or suspicious, plug the gap against the paper and other references, then fix the repo.
 
-- graph data models
-- traversals and connectivity
-- trees and arborescences
-- Eulerian and Hamiltonian utilities
-- bipartite graphs, matchings, and flows
-- adjacency matrices, Laplacians, and Matrix-Tree style counting helpers
-- classical graph generators
-- theorem-checking helpers for educational use
+Grinberg's notes are dedicated to the public domain under [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/). That covers the notes. This repository's own code and docs are under [MIT](LICENSE).
+
+## How to use this
+
+Work through `docs/chapters/` first. Then lessons, then the matching Go packages. Keep `docs/research_to_implementation_gap.md` open. That table is the honest map of what is implemented, what is a checker only, and what is still just prose.
+
+When you find a hole, fill it. Add a test, a lesson note, or a pointer to an external source. The paper is the spine. Bondy and Murty, Diestel, and the usual algorithm references are fair game when the notes skip an implementation detail.
+
+## Graph learning coach
+
+`.agents/skills/graph-learning-coach/` is a project-local coaching skill. It reads the chapter summaries and lessons, then writes progress under `learning/{student}/` (default: `learning/default_student/`).
+
+It tracks covered topics, fumbles, quizzes, and chapter progress. Use it to quiz, review, or pick a next topic. Treat its explanations the same way you treat the rest of this repo. If it disagrees with Grinberg or another source, believe the source and correct the learner files.
+
+Point the skill at this checkout as `project_root` and pick a `student` id if you are not using `default_student`.
 
 ## Package layout
 
@@ -21,46 +28,17 @@ It is designed to cover the paper's material in a practical way, with a focus on
 - `algebra`: adjacency matrices, Laplacians, determinant and spanning-tree counting
 - `generators`: complete/path/cycle/bipartite/hypercube/de Bruijn graph generators
 - `theory`: Eulerian, Hamiltonian, tree, bipartite, and degree-condition helpers
-- `examples`: small examples showing how modules fit together
-- `examples/named_graphs`: named graph family examples
-- `docs`: concept map, library plan, lesson plan, sources, and named-graph writeups
-- `learning`: recommended per-student learning state layout
+- `examples`: small examples, including named graph families
+- `docs`: chapters, lessons, exercises, sources, and the implementation-gap table
+- `learning`: per-student notes and progress
+- `.agents/skills/graph-learning-coach`: coaching skill
 
-## Scope note
+## Scope
 
-The source paper is course-scale and theorem-heavy. Not every theorem maps directly to an efficient general-purpose algorithm. This library therefore distinguishes between:
+The notes are theorem-heavy. Not every theorem is an efficient algorithm. Code here is split into:
 
 - polynomial-time constructive algorithms
-- exact small-instance algorithms
-- theorem-checking utilities and educational helpers
+- exact small-instance search
+- checkers and educational helpers
 
-## Named graph coverage
-
-The library now includes dedicated examples and write-ups for these named graph families:
-- empty graph
-- complete graph
-- path graph
-- cycle graph
-- complete bipartite graph
-- hypercube graph
-- de Bruijn digraph
-- tournament
-
-See:
-- `examples/named_graphs/`
-- `docs/named_graphs/`
-
-## Learning aid additions
-- `docs/learning_path.md`
-- `docs/chapters/`
-- `docs/lesson_plan.md`
-- `docs/research_to_implementation_gap.md`
-- `docs/lessons/`
-- `docs/exercises/`
-- `docs/projects/`
-- `docs/sources.md`
-- `learning/README.md`
-
-## Status
-
-This implementation is intentionally self-contained and standard-library-only so it is easy to inspect and extend in constrained environments.
+Stdlib only, module `github.com/stephen-mcelhose/graphtheory`.
