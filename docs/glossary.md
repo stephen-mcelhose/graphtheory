@@ -15,6 +15,7 @@ This glossary tracks important terms from the lesson plan and project knowledge 
 - **Loop** — an edge from a vertex to itself; absent in simple graphs.
 - **Multigraph** — a graph that may have multiple edges between the same pair of vertices.
 - **Neighbor** — a vertex adjacent to another vertex.
+- **Parity** — whether an integer is even or odd.
 - **Path** — a walk with no repeated vertices.
 - **Set notation** — the use of curly braces $\{\,\}$ to denote a set of grouped elements, e.g. $\{A, B\}$ means one set containing both $A$ and $B$ together; preferred notation for components, SCCs, matchings, cliques, and edge sets.
 - **Simple graph** — a graph with no loops and no multiple edges.
@@ -57,16 +58,23 @@ This glossary tracks important terms from the lesson plan and project knowledge 
 
 ## Eulerian and Hamiltonian themes
 - **Camion's theorem** — every strongly connected tournament has a Hamiltonian cycle.
+- **Characterization** — a theorem that gives an exact condition describing when a property holds, not just a one-way test.
+- **Degree parity** — whether a vertex degree is even or odd.
 - **Dirac's theorem / Dirac condition** — if every vertex in an $n$-vertex simple graph has degree at least $n/2$, then the graph is Hamiltonian.
 - **Edge-traversal problem** — a problem whose objective is defined in terms of using, covering, or ordering edges, rather than visiting each vertex once.
 - **Eulerian circuit** — a closed trail using every edge exactly once.
 - **Eulerian path** — a trail using every edge exactly once.
+- **Global structure** — the overall arrangement of a graph beyond local properties such as a single vertex degree.
 - **Hamiltonian backtracking** — an exact search method that grows a vertex-by-vertex path and backtracks when a partial choice fails.
 - **Hamiltonian cycle** — a cycle visiting every vertex exactly once.
 - **Hamiltonian dynamic programming on subsets** — a subset-state exact algorithm for small Hamiltonian instances.
 - **Hamiltonian exact search** — an exponential-time family of methods that explicitly searches for Hamiltonian paths or cycles.
 - **Hamiltonian path** — a path visiting every vertex exactly once.
 - **Hierholzer's algorithm** — a constructive algorithm for building an Eulerian circuit.
+- **Local constraint** — a rule that depends only on nearby or vertex-level information rather than the whole graph at once.
+- **Necessary condition** — a condition that must hold if a statement is true, though by itself it may not be enough to guarantee the statement.
+- **Sufficient condition** — a condition that guarantees a statement is true, though it may not be required in every case.
+- **Splicing cycles** — combining smaller closed cycles into one larger Eulerian circuit, as in Hierholzer's algorithm.
 - **Vertex-traversal problem** — a problem whose objective is defined in terms of visiting every vertex, rather than covering every edge.
 
 ## Bipartite, matching, and flow
@@ -99,14 +107,20 @@ This glossary tracks important terms from the lesson plan and project knowledge 
 ## Algorithms and optimization
 - **BFS (Breadth-first search)** — an algorithm exploring vertices layer by layer from a start vertex.
 - **Constructive algorithm** — an algorithm that explicitly builds the required object, not just proves existence.
+- **Decision problem** — a problem whose output is yes/no, such as whether a graph has a Hamiltonian cycle.
 - **DFS (Depth-first search)** — an algorithm exploring by going deep along one branch before backtracking.
+- **Dynamic programming on subsets** — a method that solves a problem by storing results for many vertex subsets and building larger states from smaller ones.
 - **Edmonds-Karp algorithm** — an implementation of Ford-Fulkerson using BFS to find augmenting paths.
+- **Exact search** — a search method that aims to find an exact solution rather than an approximation or heuristic answer.
 - **Ford-Fulkerson algorithm** — a method for computing max flow by repeatedly augmenting along residual paths.
 - **Greedy algorithm** — an algorithm that makes the locally optimal choice at each step, e.g. Kruskal's or Prim's.
 - **Hierholzer's algorithm** — a constructive algorithm for building an Eulerian circuit.
 - **Kruskal's algorithm** — a greedy algorithm for minimum spanning trees based on adding the cheapest non-cycle edge.
+- **Optimization problem** — a problem that asks for the best solution according to some objective, such as minimum cost or maximum flow.
 - **Ore's theorem** — if every pair of non-adjacent vertices in a graph has degree-sum at least $n$, the graph is Hamiltonian.
 - **Prim's algorithm** — a greedy algorithm for minimum spanning trees based on growing a tree outward from a start vertex.
+- **Search problem** — a problem that asks not just whether a solution exists, but to explicitly find one.
+- **Traversal problem** — a problem centered on moving through a graph according to rules about which vertices or edges must be visited.
 
 ## Named graph families
 - **Complete bipartite graph ($K_{m,n}$)** — connects every vertex in one part to every vertex in the other.
@@ -128,3 +142,7 @@ This glossary tracks important terms from the lesson plan and project knowledge 
 ## Notes
 - Prefer curly-brace set notation ($\{\,\}$) when grouping objects like SCCs, matchings, cliques, or edge sets.
 - This glossary should be extended whenever a lesson introduces a new important term.
+
+## Notation and logic language
+- **iff** — abbreviation for "if and only if"; a two-way implication meaning both directions hold.
+- **if and only if** — a statement meaning that if $P$ then $Q$ and if $Q$ then $P$ simultaneously.
