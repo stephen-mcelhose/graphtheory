@@ -6,8 +6,9 @@
 | Walks, paths, cycles | foundational | partially implemented via traversal and examples | understand terms before algorithms |
 | Connectedness | core theorem layer | implemented | directly constructive |
 | Trees and spanning trees | structural + constructive | partially implemented | good bridge from theory to code |
-| Eulerian circuits | theorem + proof + applications | implemented for core checks and digraph construction | strong constructive learning topic |
-| Hamiltonian paths/cycles | criteria + examples | exact small-instance search | useful for discussing complexity |
+| Eulerian circuits | theorem + proof + applications | Hierholzer construction in `theory` (`EulerianCircuit`, `EulerianCircuitDigraph`) plus degree checks | strong constructive learning topic |
+| Hamiltonian paths/cycles | criteria + examples | backtracking path/cycle, subset DP (`HamiltonianPathDP`), and exact cycle search for small instances | useful for discussing complexity |
+| Minimum spanning trees | trees and weighted variants | Kruskal and Prim in `mst` with weighted-graph helpers | good algorithm-to-theorem bridge |
 | Tournaments | dedicated directed family | partially implemented | excellent for named-family study |
 | Matchings | major chapter | implemented at core level | strong algorithmic topic |
 | Flows | major chapter | implemented at core level | central optimization module |

@@ -2,6 +2,7 @@
 
 ## Week 1: Foundations
 - read `docs/learning_path.md`
+- read `docs/knowledge_base/index.md`
 - read `docs/chapters/chapter_01_preface.md`
 - study `docs/chapters/chapter_02_simple_graphs.md`
 - study `docs/lessons/simple_graphs.md`

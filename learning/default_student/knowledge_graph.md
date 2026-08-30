@@ -25,8 +25,8 @@ It branches into:
 
 ## 2.1 Graph
 A **graph** consists of:
-- a vertex set #$#V#$#
-- an edge set #$#E#$#
+- a vertex set $V$
+- an edge set $E$
 
 ### Related concepts
 - has → **vertices**
@@ -146,13 +146,13 @@ A **tree** is a connected, acyclic graph.
 ### Related concepts
 - has → unique simple path between any two vertices
 - has → leaves
-- satisfies → #$#|E| = |V| - 1#$#
+- satisfies → $|E| = |V| - 1$
 - parent concept for → **rooted trees**, **spanning trees**
 
 ---
 
 ## 4.2 Leaf
-A **leaf** is a vertex of degree #$#1#$# in a tree.
+A **leaf** is a vertex of degree $1$ in a tree.
 
 ### Related concepts
 - appears in → inductive proofs on trees
@@ -223,7 +223,7 @@ A **digraph** is a graph with directed edges.
 ---
 
 ## 5.2 Arc
-An **arc** is a directed edge #$#u \to v#$#.
+An **arc** is a directed edge $u \to v$.
 
 ### Related concepts
 - contributes to → in-degree/out-degree
@@ -281,7 +281,7 @@ A **tournament** is an orientation of a complete graph: every pair of vertices h
 # 6. Special graph families
 
 ## 6.1 Complete graph
-A **complete graph** #$#K_n#$# has every pair of distinct vertices adjacent.
+A **complete graph** $K_n$ has every pair of distinct vertices adjacent.
 
 ### Related concepts
 - extreme example for → density
@@ -307,7 +307,7 @@ A **cycle graph** is a single cycle.
 ---
 
 ## 6.4 Complete bipartite graph
-A **complete bipartite graph** #$#K_{m,n}#$# connects every vertex in one part to every vertex in the other.
+A **complete bipartite graph** $K_{m,n}$ connects every vertex in one part to every vertex in the other.
 
 ### Related concepts
 - key in → matchings, Hall’s theorem, flows
@@ -316,7 +316,7 @@ A **complete bipartite graph** #$#K_{m,n}#$# connects every vertex in one part t
 ---
 
 ## 6.5 Hypercube
-The **hypercube** #$#Q_n#$# has binary strings as vertices, with edges between strings differing in one coordinate.
+The **hypercube** $Q_n$ has binary strings as vertices, with edges between strings differing in one coordinate.
 
 ### Related concepts
 - example of → bipartite graph
@@ -468,7 +468,7 @@ Study how many edges force certain subgraphs or avoid them.
 The **adjacency matrix** records which vertices are adjacent.
 
 ### Related concepts
-- for digraphs, standard convention: #$#A_{ij}#$# means edge/arc from #$#i#$# to #$#j#$#
+- for digraphs, standard convention: $A_{ij}$ means edge/arc from $i$ to $j$
 - combined with degree matrix to make → **Laplacian**
 
 ---
@@ -484,7 +484,7 @@ The **degree matrix** is diagonal, with degrees on the diagonal.
 ## 10.3 Laplacian
 The **graph Laplacian** is:
 
-#$#L = D - A#$#
+$L = D - A$
 
 ### Related concepts
 - diagonal encodes → degrees
@@ -586,7 +586,7 @@ Algorithms such as Ford–Fulkerson / Edmonds–Karp.
 ## Algebraic branch
 - **adjacency matrix** → encodes → **adjacency**
 - **degree matrix** → encodes → **degrees**
-- **Laplacian** → equals → #$#D - A#$#
+- **Laplacian** → equals → $D - A$
 - **Laplacian** → encodes → local neighbor coupling
 - **Laplacian** → reveals → global structure
 - **Matrix-Tree theorem** → uses → **Laplacian**

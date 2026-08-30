@@ -1,7 +1,7 @@
 # Empty Graph
 
 ## Definition
-The empty graph on #$#n#$# vertices has no edges.
+The empty graph on $n$ vertices has no edges.
 
 ## Go example
 ```go
@@ -13,7 +13,7 @@ order, size := g.Order(), g.Size()
 It is the sparsest simple graph family and a baseline object for connectivity, independence, and coloring.
 
 ## Expected properties
-- order: #$#n#$#
-- size: #$#0#$#
-- all degrees are #$#0#$#
-- connected iff #$#n \le 1#$#
+- order: $n$
+- size: $0$
+- all degrees are $0$
+- connected iff $n \le 1$

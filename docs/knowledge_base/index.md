@@ -22,6 +22,9 @@
 - [Spanning Tree](concepts/spanning_tree.md)
 - [Digraph](concepts/digraph.md)
 - [Tournament](concepts/tournament.md)
+- [Eulerian Path](concepts/eulerian_path.md)
+- [Eulerian Circuit](concepts/eulerian_circuit.md)
+- [Edge-Traversal Problem](concepts/edge_traversal_problem.md)
 - [Bipartite Graph](concepts/bipartite_graph.md)
 - [Matching](concepts/matching.md)
 - [Flow Network](concepts/flow_network.md)
@@ -30,6 +33,19 @@
 - [Matrix-Tree Theorem](concepts/matrix_tree_theorem.md)
 - [Chromatic Polynomial](concepts/chromatic_polynomial.md)
 
+## Additional concept entries
+- [Topological Sort](concepts/topological_sort.md)
+- [Greedy Algorithm](concepts/greedy_algorithm.md)
+- [Weighted Graph](concepts/weighted_graph.md)
+- [Hierholzer's Algorithm](concepts/hierholzers_algorithm.md)
+- [Kruskal's Algorithm](concepts/kruskals_algorithm.md)
+- [Prim's Algorithm](concepts/prims_algorithm.md)
+- [Hamiltonian Backtracking](concepts/hamiltonian_backtracking.md)
+- [Hamiltonian Dynamic Programming on Subsets](concepts/hamiltonian_dynamic_programming_on_subsets.md)
+- [Hamiltonian Exact Search](concepts/hamiltonian_exact_search.md)
+
 ## Supporting files
+- [Glossary](../glossary.md)
+- [Glossary conventions](../glossary_conventions.md)
 - [Chapter crosswalk](crosswalk.md)
 - [Study routes](study_routes.md)

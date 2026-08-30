@@ -1,7 +1,7 @@
 # Cycle Graph
 
 ## Definition
-The cycle graph #$#C_n#$# is formed by closing a path into a ring.
+The cycle graph $C_n$ is formed by closing a path into a ring.
 
 ## Go example
 ```go
@@ -13,7 +13,7 @@ bip := theory.IsBipartite(g)
 It is the standard closed walk example and fundamental for Eulerian and parity-based arguments.
 
 ## Expected properties
-- size: #$#n#$#
-- each degree is #$#2#$#
+- size: $n$
+- each degree is $2$
 - Hamiltonian by definition
-- bipartite iff #$#n#$# is even
+- bipartite iff $n$ is even

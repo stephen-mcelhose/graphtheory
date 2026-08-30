@@ -7,7 +7,7 @@ The Matrix-Tree theorem counts spanning trees using a determinant of a Laplacian
 A counting problem on graphs becomes a linear algebra problem on matrices.
 
 ## Tiny example
-For #$#K_4#$#, the spanning-tree count is #$#16#$#.
+For $K_4$, the spanning-tree count is $16$.
 
 ## In code
 - `algebra.LaplacianMatrix`
@@ -20,4 +20,4 @@ The theorem counts spanning trees; it does not itself construct one.
 Implemented constructively for counting, not proof generation.
 
 ## Exercise prompt
-Use the library to compare spanning-tree counts of #$#P_4#$#, #$#C_4#$#, and #$#K_4#$#.
+Use the library to compare spanning-tree counts of $P_4$, $C_4$, and $K_4$.

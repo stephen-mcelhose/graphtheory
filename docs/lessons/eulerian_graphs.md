@@ -32,4 +32,4 @@ A Hamiltonian cycle uses every vertex once. An Eulerian circuit uses every edge 
 Implemented constructively.
 
 ## Exercise prompt
-Explain why a cycle graph #$#C_n#$# is Eulerian, and compare that to whether it is bipartite.
+Explain why a cycle graph $C_n$ is Eulerian, and compare that to whether it is bipartite.

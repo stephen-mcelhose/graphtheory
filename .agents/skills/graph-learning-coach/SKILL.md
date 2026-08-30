@@ -88,12 +88,16 @@ Update them after every coaching turn.
    - asking what to study next
 3. Use project learning materials when available:
    - `{project_root}/docs/learning_path.md`
+   - `{project_root}/docs/glossary.md`
+   - `{project_root}/docs/glossary_conventions.md`
+   - `{project_root}/docs/knowledge_base/`
    - `{project_root}/docs/chapters/`
    - `{project_root}/docs/lesson_plan.md`
    - `{project_root}/docs/lessons/`
    - `{project_root}/docs/exercises/`
    - `{project_root}/docs/research_to_implementation_gap.md`
    - `{project_root}/docs/named_graphs/`
+   - `{project_root}/docs/algorithms/`
    - `{project_root}/docs/sources.md`
 4. Respond with a compact learning interaction using this structure:
 

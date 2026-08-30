@@ -19,3 +19,6 @@ coverage.html
 .DS_Store
 *.swp
 *~
+
+# Merge scratch
+.merge-scratch/

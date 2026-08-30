@@ -2,11 +2,11 @@
 
 ## Beginner
 - For an empty graph, no vertex has neighbors.
-- A path graph has exactly #$#n-1#$# edges.
+- A path graph has exactly $n-1$ edges.
 
 ## Intermediate
 - Centers minimize eccentricity.
-- In #$#K_{m,n}#$#, matching size is at most #$#\min(m,n)#$#.
+- In $K_{m,n}$, matching size is at most $\min(m,n)$.
 - A graph is bipartite iff it has no odd cycle.
 
 ## Advanced

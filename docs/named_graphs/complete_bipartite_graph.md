@@ -1,7 +1,7 @@
 # Complete Bipartite Graph
 
 ## Definition
-The complete bipartite graph #$#K_{m,n}#$# splits vertices into two parts and joins every cross-part pair.
+The complete bipartite graph $K_{m,n}$ splits vertices into two parts and joins every cross-part pair.
 
 ## Go example
 ```go
@@ -15,7 +15,7 @@ m := flow.MaxBipartiteMatching(g, left, right)
 It is central for Hall's theorem, bipartite matching, and flow reductions.
 
 ## Expected properties
-- size: #$#mn#$#
+- size: $mn$
 - bipartite by definition
-- maximum matching size is #$#\min(m,n)#$#
-- spanning-tree count is #$#m^{n-1} n^{m-1}#$#
+- maximum matching size is $\min(m,n)$
+- spanning-tree count is $m^{n-1} n^{m-1}$

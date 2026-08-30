@@ -4,7 +4,7 @@
 - definition of a simple graph
 - adjacency, neighbors, edges, vertices
 - graph drawings
-- Ramsey number #$#R(3,3)=6#$#
+- Ramsey number $R(3,3)=6$
 - degrees and the handshake lemma
 - Mantel's theorem
 - graph isomorphism
